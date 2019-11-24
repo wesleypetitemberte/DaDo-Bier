@@ -1,5 +1,5 @@
 <footer>
-<p>TO NEM AI</p>
+    <p>Aqui Vai o Footer</p>
 </footer>
 
 <?php wp_footer(); ?>

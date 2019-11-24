@@ -101,7 +101,7 @@ let watch = () =>{
 
 let sync = () => {
     browserSync.init({
-        proxy: "http://localhost/wordpress/",
+        proxy: "http://localhost/DaDo-Bier/",
         files       : theme + 'dist/**/*',
 		// notify: false
 	});
