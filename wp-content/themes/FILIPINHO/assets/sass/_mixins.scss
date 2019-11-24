@@ -1,0 +1,3 @@
+@function pxToVw($value, $resolution) {
+    @return calc((#{$value} / #{$resolution}) * 100vw);
+}
