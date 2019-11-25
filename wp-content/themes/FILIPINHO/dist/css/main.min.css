@@ -7305,6 +7305,99 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 900;
   font-style: normal; }
 
+.menu {
+  width: 5.2vw;
+  height: 5.2vw;
+  top: 2.6vw;
+  right: 2.6vw;
+  background-color: rgba(13, 13, 13, 0.8);
+  position: fixed;
+  z-index: 1; }
+  .menu .hamburguer {
+    width: 1.87vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.home-header {
+  position: relative; }
+  .home-header .bg-img {
+    width: 100%; }
+  .home-header .logo {
+    position: absolute;
+    top: 4.9vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8.8vw;
+    z-index: 1; }
+  .home-header .bg-div {
+    width: 100%;
+    bottom: -1.5vh;
+    left: 0;
+    position: absolute; }
+  .home-header .shadow-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0)); }
+  .home-header h1 {
+    color: #ffffff;
+    font-family: 'Rubik One';
+    left: 16.25vw;
+    top: 55%;
+    font-size: 5.2vw;
+    line-height: 0.8;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%); }
+    .home-header h1 .title-orange {
+      color: #ffb800;
+      font-family: 'Barlow Condensed';
+      line-height: 0.8;
+      font-weight: bold;
+      transform: translateY(-1vh); }
+    .home-header h1 .title-orange-outline {
+      font-family: 'Barlow Condensed';
+      font-size: 7.81vw;
+      line-height: 0.75;
+      font-weight: bold;
+      -webkit-text-stroke: 2px #ffb800;
+      color: transparent; }
+  .home-header .social-links {
+    position: absolute;
+    left: 4.84vw;
+    bottom: 8.51vh;
+    z-index: 1; }
+    .home-header .social-links .social-images img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 2.96vh;
+      width: 0.95vw; }
+    .home-header .social-links .line {
+      left: 50%;
+      width: 0.05vw;
+      height: 9.25vh;
+      margin-bottom: 2.96vh;
+      background-color: #ffffff;
+      transform: translateX(-50%);
+      position: relative; }
+    .home-header .social-links .follow-dado {
+      font-family: 'Rubik One';
+      color: #ffffff;
+      font-size: 0.9vw;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg); }
+  @media (max-width: 768px) {
+    .home-header .bg-img {
+      height: 86.95vh;
+      width: auto;
+      transform: translateX(-46%);
+      position: relative; }
+    .home-header .social-links {
+      display: none; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
