@@ -1,0 +1,136 @@
+.portfolio{
+    position: relative;
+    padding: pxToVw(40, 1920) pxToVw(315, 1920) pxToVw(82, 1920) pxToVw(315, 1920);
+
+    .bg-img{
+        position: absolute;
+        right: 0vw;
+        top: 0vh;
+        width: pxToVw(1201, 1920);
+        height: pxToVw(1186, 1920);
+        z-index: -1;
+    }
+
+    .bg-draw {
+        position: absolute;
+        left: pxToVw(131, 1920);
+        top: 0vh;
+        width: pxToVw(408.2, 1920);
+        height: pxToVw(444.3, 1920);
+    }
+
+    .bg-div {
+        position: absolute;
+        left: 0vw;
+        bottom: 0vw;
+        width: 100%;
+        height: pxToVw(120, 1920);
+    }
+
+    .name-header {
+        position: relative;
+        padding: pxToVw(123, 1920) pxToVw(0, 1920) pxToVw(120, 1920) pxToVw(110, 1920);
+        
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: pxToVw(514, 1920);
+            height: pxToVw(539, 1920);
+        }
+        
+        h1 {
+            font-family: 'Rubik One';
+            font-size: pxToVw(70, 1920);
+            line-height: 0.8;
+            color: #ffb800;
+            margin: pxToVw(0, 1920) pxToVw(0, 1920) pxToVw(15, 1920) pxToVw(0, 1920);
+        }
+        
+        span {
+            font-family: 'Barlow Condensed';
+            font-size: pxToVw(30, 1920);
+            line-height: 1.0;
+            color: #000000;
+        }
+        
+        p {
+            font-family: 'Barlow';
+            font-size: pxToVw(16, 1920);;
+            line-height: 1.2;
+            color: #000000;
+            margin: pxToVw(15, 1920) pxToVw(0, 1920) pxToVw(0, 1920) pxToVw(0, 1920);
+        }
+    }
+
+    .block-search-beer {
+        width: pxToVw(1290, 1920);
+        height: pxToVw(233, 1920);
+        background-color: #0d0d0d;
+        padding: pxToVw(49, 1920) pxToVw(110, 1920) pxToVw(61, 1920) pxToVw(110, 1920);
+        font-size: 0;
+
+        h2 {
+            height: pxToVw(36, 1920);
+            font-family: 'Barlow Condensed';
+            font-size: pxToVw(30, 1920);
+            font-weight: 500;
+            color: #ffb800;
+            margin-bottom: pxToVw(27, 1920);
+        }
+
+        .form-container {
+            width: pxToVw(520, 1920);
+            height: pxToVw(60, 1920);
+            border: none;
+            background-color: #f1f1f1;
+            display: inline-block;
+            position: relative;
+            font-size: 0;
+            &:last-child{
+
+                margin-left: pxToVw(30, 1920);
+            }
+            .arrow {
+                position: absolute;
+                right: pxToVw(14, 1920);
+                top: 50%;
+                width: pxToVw(30, 1920);
+                transform: translateY(-50%);
+            }
+            select {
+                padding-left: pxToVw(30, 1920);
+                font-family: 'Barlow';
+                font-size: pxToVw(20, 1920);
+                font-weight: 600;
+                color: #333333;
+                width: 100%;
+                height: 100%;
+                border: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+        }
+    }
+    .catalog {
+        width: 100%;
+        .beer {
+            display:inline-block;
+            width: 33.333%;
+            height: pxToVw(430, 1920);
+            font-size: 0;
+            text-align: center;
+            &:nth-child(odd) {background: #ffc328}
+            &:nth-child(even) {background: #ffb800}
+
+            img {
+                height: pxToVw(300, 1920);
+            }
+
+            .craft {
+                //PAREI AQUI !!!!!
+            }
+        }
+    }
+}
