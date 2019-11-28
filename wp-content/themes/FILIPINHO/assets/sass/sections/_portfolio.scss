@@ -1,6 +1,6 @@
 .portfolio{
     position: relative;
-    padding: pxToVw(40, 1920) pxToVw(315, 1920) pxToVw(82, 1920) pxToVw(315, 1920);
+    padding: pxToVw(40, 1920) pxToVw(315, 1920) pxToVw(1, 1920) pxToVw(315, 1920);
 
     .bg-img{
         position: absolute;
@@ -22,8 +22,9 @@
     .bg-div {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: pxToVw(-90, 1920);
         width: 100%;
+        z-index: 1;
     }
 
     .name-header {
@@ -159,7 +160,7 @@
         padding: 0;
 
         .bg-div {
-            bottom: pxToVw(-44, 375);
+            bottom: pxToVw(-45, 375);
         }
 
         .block-search-beer {

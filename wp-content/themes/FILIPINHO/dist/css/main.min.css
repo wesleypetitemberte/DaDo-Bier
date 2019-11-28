@@ -7427,7 +7427,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .portfolio {
   position: relative;
-  padding: calc((40 / 1920) * 100vw) calc((315 / 1920) * 100vw) calc((82 / 1920) * 100vw) calc((315 / 1920) * 100vw); }
+  padding: calc((40 / 1920) * 100vw) calc((315 / 1920) * 100vw) calc((1 / 1920) * 100vw) calc((315 / 1920) * 100vw); }
   .portfolio .bg-img {
     position: absolute;
     right: 0vw;
@@ -7444,8 +7444,9 @@ a.text-dark:hover, a.text-dark:focus {
   .portfolio .bg-div {
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 100%; }
+    bottom: calc((-90 / 1920) * 100vw);
+    width: 100%;
+    z-index: 1; }
   .portfolio .name-header {
     position: relative;
     padding: calc((123 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((120 / 1920) * 100vw) calc((110 / 1920) * 100vw); }
@@ -7547,7 +7548,7 @@ a.text-dark:hover, a.text-dark:focus {
     .portfolio {
       padding: 0; }
       .portfolio .bg-div {
-        bottom: calc((-44 / 375) * 100vw); }
+        bottom: calc((-45 / 375) * 100vw); }
       .portfolio .block-search-beer {
         height: calc((233 / 375) * 100vw);
         padding: calc((30 / 375) * 100vw) calc((15 / 375) * 100vw) calc((30 / 375) * 100vw) calc((15 / 375) * 100vw);
@@ -7593,6 +7594,120 @@ a.text-dark:hover, a.text-dark:focus {
           font-size: calc((21 / 375) * 100vw); }
         .portfolio .name-header p {
           font-size: calc((12 / 375) * 100vw); } }
+
+.bier-experience {
+  padding: calc((40 / 1920) * 100vw) calc((315 / 1920) * 100vw) calc((1 / 1920) * 100vw) calc((315 / 1920) * 100vw);
+  position: relative; }
+  .bier-experience .bg-img-mobile {
+    display: none; }
+  .bier-experience .bg-img {
+    display: initial;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: calc((960 / 1920) * 100vw);
+    z-index: -1; }
+  .bier-experience .bg-div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+  .bier-experience .header-bier {
+    padding-top: calc((95 / 1920) * 100vw); }
+    .bier-experience .header-bier h1 {
+      -webkit-text-stroke: 2px #e1251b;
+      color: transparent;
+      font-family: 'Barlow Condensed';
+      font-size: calc((120 / 1920) * 100vw);
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0; }
+    .bier-experience .header-bier span {
+      font-family: 'Rubik One';
+      font-size: calc((70 / 1920) * 100vw);
+      line-height: 0.8;
+      color: #ffffff; }
+    .bier-experience .header-bier p {
+      font-family: 'Barlow Condensed';
+      font-size: calc((24 / 1920) * 100vw);
+      line-height: 1.1;
+      color: #ffffff;
+      padding-top: calc((35 / 1920) * 100vw);
+      margin: 0; }
+    .bier-experience .header-bier img {
+      position: absolute;
+      right: calc((271 / 1920) * 100vw);
+      top: calc((125 / 1920) * 100vw);
+      height: calc((265 / 1920) * 100vw);
+      z-index: 1; }
+  .bier-experience .pub-and-kombi {
+    margin: calc((70 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((94 / 1920) * 100vw) calc((0 / 1920) * 100vw);
+    font-size: 0; }
+    .bier-experience .pub-and-kombi .item {
+      position: relative;
+      display: inline-block; }
+      .bier-experience .pub-and-kombi .item:last-child {
+        margin-left: calc((30 / 1920) * 100vw); }
+      .bier-experience .pub-and-kombi .item .text {
+        position: absolute;
+        bottom: calc((72 / 1920) * 100vw);
+        left: calc((40 / 1920) * 100vw);
+        font-family: 'Rubik One';
+        font-size: calc((40 / 1920) * 100vw);
+        line-height: 1.0;
+        color: #ffffff; }
+        .bier-experience .pub-and-kombi .item .text .text-strong {
+          font-size: calc((80 / 1920) * 100vw);
+          line-height: 1; }
+      .bier-experience .pub-and-kombi .item .item-img {
+        width: calc((615 / 1920) * 100vw); }
+  @media (max-width: 768px) {
+    .bier-experience {
+      padding: calc((0 / 375) * 100vw) calc((15 / 375) * 100vw) calc((0 / 375) * 100vw) calc((15 / 375) * 100vw); }
+      .bier-experience .bg-img {
+        display: none; }
+      .bier-experience .bg-img-mobile {
+        display: initial;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+        z-index: -1; }
+      .bier-experience .bg-div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%; }
+      .bier-experience .header-bier h1 {
+        margin-top: calc((45 / 375) * 100vw);
+        font-size: calc((80 / 375) * 100vw); }
+      .bier-experience .header-bier span {
+        font-size: calc((38 / 375) * 100vw); }
+      .bier-experience .header-bier p {
+        font-size: calc((18 / 375) * 100vw);
+        margin-bottom: calc((35 / 375) * 100vw); }
+      .bier-experience .header-bier img {
+        right: calc((19 / 375) * 100vw);
+        top: calc((42 / 375) * 100vw);
+        height: calc((104 / 375) * 100vw); }
+      .bier-experience .pub-and-kombi {
+        margin: 0;
+        font-size: 0; }
+        .bier-experience .pub-and-kombi .item {
+          display: block; }
+          .bier-experience .pub-and-kombi .item:last-child {
+            margin-left: calc((0 / 375) * 100vw);
+            padding-top: calc((15 / 375) * 100vw); }
+          .bier-experience .pub-and-kombi .item .item-img {
+            width: 100%;
+            height: calc((225 / 375) * 100vw); }
+          .bier-experience .pub-and-kombi .item .text {
+            bottom: calc((36 / 375) * 100vw);
+            left: calc((32 / 375) * 100vw);
+            font-size: calc((20 / 375) * 100vw); }
+            .bier-experience .pub-and-kombi .item .text .text-strong {
+              font-size: calc((38 / 375) * 100vw); } }
 
 /* Slider */
 .slick-slider {
@@ -7806,6 +7921,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
   font-style: normal; }
 
+
 .home-header {
   background: brown; }
-
