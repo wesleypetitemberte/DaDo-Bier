@@ -7443,10 +7443,9 @@ a.text-dark:hover, a.text-dark:focus {
     height: calc((444.3 / 1920) * 100vw); }
   .portfolio .bg-div {
     position: absolute;
-    left: 0vw;
-    bottom: 0vw;
-    width: 100%;
-    height: calc((120 / 1920) * 100vw); }
+    left: 0;
+    bottom: 0;
+    width: 100%; }
   .portfolio .name-header {
     position: relative;
     padding: calc((123 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((120 / 1920) * 100vw) calc((110 / 1920) * 100vw); }
@@ -7461,7 +7460,7 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: calc((70 / 1920) * 100vw);
       line-height: 0.8;
       color: #ffb800;
-      margin: calc((0 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((15 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
+      margin-bottom: calc((15 / 1920) * 100vw); }
     .portfolio .name-header span {
       font-family: 'Barlow Condensed';
       font-size: calc((30 / 1920) * 100vw);
@@ -7474,28 +7473,26 @@ a.text-dark:hover, a.text-dark:focus {
       color: #000000;
       margin: calc((15 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
   .portfolio .block-search-beer {
-    width: calc((1290 / 1920) * 100vw);
+    width: 100%;
     height: calc((233 / 1920) * 100vw);
     background-color: #0d0d0d;
     padding: calc((49 / 1920) * 100vw) calc((110 / 1920) * 100vw) calc((61 / 1920) * 100vw) calc((110 / 1920) * 100vw);
     font-size: 0; }
     .portfolio .block-search-beer h2 {
-      height: calc((36 / 1920) * 100vw);
       font-family: 'Barlow Condensed';
       font-size: calc((30 / 1920) * 100vw);
       font-weight: 500;
       color: #ffb800;
       margin-bottom: calc((27 / 1920) * 100vw); }
     .portfolio .block-search-beer .form-container {
-      width: calc((520 / 1920) * 100vw);
+      width: calc((510 / 1920) * 100vw);
       height: calc((60 / 1920) * 100vw);
       border: none;
       background-color: #f1f1f1;
-      display: inline-block;
       position: relative;
-      font-size: 0; }
+      float: left; }
       .portfolio .block-search-beer .form-container:last-child {
-        margin-left: calc((30 / 1920) * 100vw); }
+        float: right; }
       .portfolio .block-search-beer .form-container .arrow {
         position: absolute;
         right: calc((14 / 1920) * 100vw);
@@ -7515,19 +7512,87 @@ a.text-dark:hover, a.text-dark:focus {
         -moz-appearance: none;
         appearance: none; }
   .portfolio .catalog {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: calc((82 / 1920) * 100vw); }
     .portfolio .catalog .beer {
-      display: inline-block;
-      width: 33.333%;
-      height: calc((430 / 1920) * 100vw);
+      display: flex;
+      justify-content: center;
       font-size: 0;
-      text-align: center; }
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 33.333%;
+      padding: calc((15 / 1920) * 100vw) calc((58 / 1920) * 100vw) calc((58 / 1920) * 100vw) calc((58 / 1920) * 100vw); }
       .portfolio .catalog .beer:nth-child(odd) {
         background: #ffc328; }
       .portfolio .catalog .beer:nth-child(even) {
         background: #ffb800; }
+      .portfolio .catalog .beer:hover span {
+        color: black; }
       .portfolio .catalog .beer img {
-        height: calc((300 / 1920) * 100vw); }
+        height: calc((300 / 1920) * 100vw);
+        padding-bottom: calc((20 / 1920) * 100vw); }
+      .portfolio .catalog .beer span {
+        text-align: center;
+        height: calc((24.5 / 1920) * 100vw);
+        font-family: 'Rubik One';
+        font-size: calc((30 / 1920) * 100vw);
+        line-height: 1.05;
+        color: #ffffff;
+        transition: color 300ms ease-in-out; }
+  @media (max-width: 768px) {
+    .portfolio {
+      padding: 0; }
+      .portfolio .bg-div {
+        bottom: calc((-44 / 375) * 100vw); }
+      .portfolio .block-search-beer {
+        height: calc((233 / 375) * 100vw);
+        padding: calc((30 / 375) * 100vw) calc((15 / 375) * 100vw) calc((30 / 375) * 100vw) calc((15 / 375) * 100vw);
+        margin-bottom: calc((43 / 375) * 100vw); }
+        .portfolio .block-search-beer h2 {
+          font-size: calc((21 / 375) * 100vw);
+          margin-bottom: calc((27 / 375) * 100vw); }
+        .portfolio .block-search-beer .form-container {
+          float: none;
+          width: 100%;
+          height: calc((50 / 375) * 100vw); }
+          .portfolio .block-search-beer .form-container .arrow {
+            width: calc((30 / 375) * 100vw);
+            height: calc((30 / 375) * 100vw); }
+          .portfolio .block-search-beer .form-container select {
+            font-size: calc((16 / 375) * 100vw); }
+          .portfolio .block-search-beer .form-container:last-child {
+            margin-top: calc((20 / 375) * 100vw); }
+      .portfolio .catalog .beer {
+        flex: 1 1 50%;
+        padding: calc((12 / 375) * 100vw) calc((42 / 375) * 100vw) calc((50 / 375) * 100vw) calc((42 / 375) * 100vw);
+        border: 0.5px solid #ffffff; }
+        .portfolio .catalog .beer img {
+          height: calc((130 / 375) * 100vw);
+          padding-bottom: calc((20 / 375) * 100vw); }
+        .portfolio .catalog .beer span {
+          font-size: calc((13 / 375) * 100vw); }
+      .portfolio .bg-img {
+        display: none;
+        visibility: hidden; }
+      .portfolio .bg-draw {
+        display: none;
+        visibility: hidden; }
+      .portfolio .name-header {
+        padding: calc((40 / 375) * 100vw) calc((14 / 375) * 100vw) calc((30 / 375) * 100vw) calc((20 / 375) * 100vw); }
+        .portfolio .name-header img {
+          display: none;
+          visibility: hidden; }
+        .portfolio .name-header h1 {
+          font-size: calc((38 / 375) * 100vw);
+          margin-bottom: calc((65 / 1920) * 100vw); }
+        .portfolio .name-header span {
+          font-size: calc((21 / 375) * 100vw); }
+        .portfolio .name-header p {
+          font-size: calc((12 / 375) * 100vw); } }
 
 /* Slider */
 .slick-slider {

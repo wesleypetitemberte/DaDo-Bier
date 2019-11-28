@@ -1,7 +1,7 @@
 <section class="portfolio">
     <img class="bg-img" src="<?php echo get_template_directory_uri(); ?>/dist/img/dirty bg.png" alt="Imagem de Fundo">
     <img class="bg-draw" src="<?php echo get_template_directory_uri(); ?>/dist/img/draw.png" alt="Imagem da Cevada">
-    <!--<img class="bg-div" src="<?php echo get_template_directory_uri(); ?>/dist/img/divisor.png" alt="Imagem de Transição">-->
+    <img class="bg-div" src="<?php echo get_template_directory_uri(); ?>/dist/img/divisor.png" alt="Imagem de Transição">
 
     <div class='name-header'>
         <img src="<?php echo get_template_directory_uri(); ?>/dist/img/lager.png" alt="Imagem da Cerveja">
@@ -40,33 +40,33 @@
     <div class="catalog">
         <div class="beer">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/img/craft.png" alt="Imagem da Cerveja Craft">
-            <span class="CRAFT">CRAFT AMERICAN LAGER</span>
-        </div><!--
+            <span>CRAFT AMERICAN LAGER</span>
+        </div>
 
-        --><div class="beer">
+        <div class="beer">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/img/duons.png" alt="Imagem da Cerveja Duons">
-            DUONS
-        </div><!--
+            <span>DUONS</span>
+        </div>
 
-        --><div class="beer">
+        <div class="beer">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/img/ipa.png" alt="Imagem da Cerveja Ipa">
-            IPA
-        </div><!--
+            <span>IPA</span>
+        </div>
 
-        --><div class="beer">
+        <div class="beer">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/img/ilex.png" alt="Imagem da Cerveja Ilex">
-            ILEX
-        </div><!--
+            <span>ILEX</span>
+        </div>
 
-        --><div class="beer">
+        <div class="beer">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/img/original.png" alt="Imagem da Cerveja Original">
-            ORIGINAL
-        </div><!--
+            <span>ORIGINAL</span>
+        </div>
 
-        --><div class="beer">
+        <div class="beer">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/img/ilex.png" alt="Imagem da Cerveja Ilex">
-            ILEX
-        </div><!--
-    --></div>
+            <span>ILEX</span>
+        </div>
+    </div>
 
 </section>
