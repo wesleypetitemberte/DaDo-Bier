@@ -1,0 +1,77 @@
+.restarants {
+    position: relative;
+
+    .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .arrow-rigth {
+        right: pxToVw(105, 1920);
+        top: pxToVw(382, 1920);
+        height: pxToVw(96, 1920);
+        position: absolute;
+    }
+
+    .arrow-left {
+        left: pxToVw(105, 1920);
+        top: pxToVw(382, 1920);
+        height: pxToVw(96, 1920);
+        position: absolute;
+        transform: rotateY(180deg);
+    }
+
+    .bg-div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .main-text {
+        padding: pxToVw(159, 1920) pxToVw(746, 1920) pxToVw(0, 1920) pxToVw(746, 1920);
+        text-align: center;
+
+        .title-orange {
+            font-family: 'Barlow Condensed';
+            font-size: pxToVw(30, 1920);
+            font-weight: 600;
+            line-height: 1.1;
+            color: #ffb800;
+            margin-bottom: pxToVw(70, 1920);
+        }
+
+        h1 {
+            font-family: 'Rubik One';
+            font-size: pxToVw(76, 1920);
+            line-height: 0.9;
+            color: #ffffff;
+            margin: pxToVw(70, 1920) pxToVw(0, 1920) pxToVw(70, 1920) pxToVw(0, 1920);
+        }
+
+        .text-white {
+            font-family: 'Barlow';
+            font-size: pxToVw(16, 1920);
+            font-weight: 500;
+            line-height: 1.1;
+            color: #ffffff;
+        }
+
+        .saiba-mais {
+            width: pxToVw(191, 1920);
+            height: pxToVw(70, 1920);
+            border: solid 3px #ffb800;
+            margin: pxToVw(50, 1920) pxToVw(117, 1920) pxToVw(0, 1920) pxToVw(117, 1920);
+
+            span {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(20, 1920);
+                font-weight: 600;
+                letter-spacing: pxToVw(2, 1920);
+                color: #ffffff;
+            }
+        }
+    }
+}

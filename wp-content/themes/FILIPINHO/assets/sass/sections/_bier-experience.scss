@@ -1,5 +1,5 @@
 .bier-experience {
-    padding: pxToVw(40, 1920) pxToVw(315, 1920) pxToVw(1, 1920) pxToVw(315, 1920);
+    padding: pxToVw(40, 1920) pxToVw(315, 1920) pxToVw(94, 1920) pxToVw(315, 1920);
     position: relative;
 
     .bg-img-mobile {
@@ -10,7 +10,7 @@
         display: initial;
         position: absolute;
         right: 0;
-        top: 0;
+        bottom: 0;
         width: 100%;
         height: pxToVw(960, 1920);
         z-index: -1;
@@ -19,8 +19,9 @@
     .bg-div {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: pxToVw(-70, 1920);
         width: 100%;
+        height: pxToVw(92, 1920);
     }
 
     .header-bier {
@@ -62,7 +63,7 @@
     }
 
     .pub-and-kombi {
-        margin: pxToVw(70, 1920) pxToVw(0, 1920) pxToVw(94, 1920) pxToVw(0, 1920);
+        margin-top: pxToVw(70, 1920);
         font-size: 0;
 
         .item{
