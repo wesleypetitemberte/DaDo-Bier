@@ -2,7 +2,9 @@
 
     <img class="bg-img" src="<?php echo get_template_directory_uri(); ?>/dist/img/image.png" alt="Imagem de Fundo">
     <img class="bg-div" src="<?php echo get_template_directory_uri(); ?>/dist/img/image_8.png" alt="Imagem do Pub">
+    <img class="bg-div-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/divbier.png" alt="Imagem de Transição">
     <img class="bg-img-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/BG.png" alt="Imagem de Fundo Mobile">
+
     <div class="header-bier">
         <h1>BIER</h1>
         <span>EXPERIENCE</span>

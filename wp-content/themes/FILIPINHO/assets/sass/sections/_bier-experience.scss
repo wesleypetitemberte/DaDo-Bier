@@ -24,6 +24,10 @@
         height: pxToVw(92, 1920);
     }
 
+    .bg-div-mobile {
+        display: none;
+    }
+
     .header-bier {
         padding-top: pxToVw(95, 1920);
 
@@ -101,10 +105,12 @@
 
 
     @media(max-width: 768px) {
-        padding: pxToVw(0, 375) pxToVw(15, 375) pxToVw(0, 375) pxToVw(15, 375);
+        padding: pxToVw(0, 375) pxToVw(15, 375) pxToVw(78, 375) pxToVw(15, 375);
+
         .bg-img {
             display: none;
         }
+
         .bg-img-mobile {
             display: initial;
             position: absolute;
@@ -113,10 +119,16 @@
             width: auto;
             z-index: -1;
         }
+
         .bg-div {
+            display: none;
+        }
+
+        .bg-div-mobile {
+            display: initial;
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: pxToVw(-70, 375);
             width: 100%;
         }
 

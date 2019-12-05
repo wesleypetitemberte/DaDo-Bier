@@ -1,6 +1,8 @@
 <section class="restarants">
     <img class="bg" src="<?php echo get_template_directory_uri(); ?>/dist/img/comidacountry.png" alt="Imagem de Fundo">
-    <!--<img class="bg-div" src="<?php echo get_template_directory_uri(); ?>/dist/img/image_8_1.png" alt="Logo Dado Bier">-->
+    <img class="bg-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/BGMobileComida.png" alt="Imagem de Fundo">
+    <img class="bg-div" src="<?php echo get_template_directory_uri(); ?>/dist/img/image_8_1.png" alt="Imagem de Transição">
+    <img class="bg-div-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/image81.png" alt="Imagem de Transição">
     <img class="arrow-rigth" src="<?php echo get_template_directory_uri(); ?>/dist/img/chevron_right.png" alt="Seta Direita">
     <img class="arrow-left" src="<?php echo get_template_directory_uri(); ?>/dist/img/chevron_right.png" alt="Seta Esquerda">
 
