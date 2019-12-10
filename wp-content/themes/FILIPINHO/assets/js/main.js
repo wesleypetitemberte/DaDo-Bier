@@ -4,10 +4,22 @@
 
     let main = {
         init: function () {
-             //AQUI VAI MEU JAVASCRIPT
+            restaurants.init()
         }
+    };
 
-    }
+    let restaurants = {
+        init: function () {
+            console.log('restaurants');
+            $(document).ready(function(){
+                $('.restaurants .slider').slick({
+                    prevArrow: '<img class="arrow-left" src="wp-content/themes/FILIPINHO/dist/img/chevron_right.png" alt="Seta Esquerda">',
+                    nextArrow: '<img class="arrow-rigth" src="wp-content/themes/FILIPINHO/dist/img/chevron_right.png" alt="Seta Direita">',
+                    dots: true,
+                });
+            });
+        }
+    };
 
     main.init();
 })();

@@ -17,6 +17,7 @@
     }
 
     .bg-div {
+        z-index: 1;
         position: absolute;
         left: 0;
         bottom: pxToVw(-70, 1920);
@@ -130,6 +131,7 @@
             left: 0;
             bottom: pxToVw(-70, 375);
             width: 100%;
+            z-index: 1;
         }
 
         .header-bier {
