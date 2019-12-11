@@ -5,6 +5,7 @@
         background-color: #0f0f0f;
         padding: pxToVw(64, 1920) pxToVw(782, 1920) pxToVw(62, 1920) pxToVw(782, 1920);
         text-align: center;
+        z-index: -1;
 
         h1 {
             font-family: 'Rubik One';
@@ -23,36 +24,170 @@
     }
 
     .halls {
-        .hall-belgian {
-            img {}
-            .main-text {
-                .title-orange {}
-                .title-white {}
-                .text-white {}
+        display: flex;
+        height: pxToVw(700, 1920);
+        width: 100%;
 
-                .saiba-mais {
-                    span {}
+        .hall {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 50%;
+            padding: pxToVw(0, 1920) pxToVw(280, 1920);
+
+            img {
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        .hall-royal-ilex {
+            position: relative;
+            width: 50%;
+            height: pxToVw(700, 1920);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .hall {
+                height: 50%;
+                width: 100%;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
                 }
             }
         }
 
-        .hall-royal {
-        img {}
+        .main-text {
+            z-index: 1;
+            text-align: center;
 
-            .main-text {
-                .title-orange {}
-                .title-white {}
-                .text-white {}
+            h3 {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(30, 1920);
+                font-weight: 600;
+                line-height: 1.1;
+                margin-bottom: pxToVw(9, 1920);
+                color: #ffb800;
+            }
+
+            h4 {
+                font-family: 'Rubik One';
+                font-size: pxToVw(50, 1920);
+                line-height: 1;
+                margin-bottom: pxToVw(28, 1920);
+                color: #ffffff;
+            }
+
+            p {
+                font-family: 'Barlow';
+                font-size: pxToVw(14, 1920);
+                font-weight: 500;
+                line-height: 1.4;
+                margin-bottom: 0;
+                color: #ffffff;
+            }
+
+            .saiba-mais {
+                width: pxToVw(191, 1920);
+                height: pxToVw(60, 1920);
+                border: solid 3px #ffb800;
+                position: relative;
+                display: inline-block;
+                margin-top: pxToVw(36, 1920);
+
+                span {
+                    font-family: 'Barlow Condensed';
+                    font-size: pxToVw(20, 1920);
+                    font-weight: 600;
+                    letter-spacing: pxToVw(2, 1920);
+                    color: #ffffff;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: max-content;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
+    }
 
-        .hall-ilex {
-            img {}
+    @media(max-width: 768px) {
+        .header-events {
+            padding: pxToVw(69, 375) pxToVw(40, 375) pxToVw(69, 375) pxToVw(40, 375);
 
+            h1 {
+                font-size: pxToVw(38, 375);
+                margin-bottom: pxToVw(15, 375);
+            }
+            span {
+                font-size: pxToVw(21, 375);
+            }
+        }
+        
+        .halls {
+            display: block;
+            height: 50%;
+    
+            .hall {
+                width: 100%;
+                padding: pxToVw(0, 375) pxToVw(32, 375);
+
+            }
+    
+            .hall-royal-ilex {
+                width: 50%;
+                height: 50%;
+    
+                .hall {
+                    height: 50%;
+                    width: 100%;
+    
+                    img {
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                    }
+                }
+            }
+    
             .main-text {
-                .title-orange {}
-                .title-white {}
-                .text-white {}
+
+                h3 {
+                    font-size: pxToVw(21, 375);
+                    margin-bottom: pxToVw(9, 375);
+                }
+    
+                h4 {
+                    font-size: pxToVw(38, 375);
+                    margin-bottom: pxToVw(17, 375);
+                }
+    
+                p {
+                    font-size: pxToVw(14, 375);
+                }
+    
+                .saiba-mais {
+                    width: pxToVw(165, 375);
+                    height: pxToVw(50, 375);
+                    margin-top: pxToVw(30, 375);
+    
+                    span {
+                        font-size: pxToVw(20, 375);
+                        letter-spacing: pxToVw(2, 375);
+                    }
+                }
             }
         }
     }
