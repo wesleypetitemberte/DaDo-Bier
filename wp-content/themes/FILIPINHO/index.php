@@ -4,4 +4,5 @@
 <?php get_template_part("bier-experience");?>
 <?php get_template_part("restaurants");?>
 <?php get_template_part("events");?>
+<?php get_template_part("shop");?>
 <?php get_footer(); ?>
