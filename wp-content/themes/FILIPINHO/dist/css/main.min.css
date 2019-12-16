@@ -8009,8 +8009,7 @@ a.text-dark:hover, a.text-dark:focus {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    z-index: 1;
-    width: calc((406.6 / 1920) * 100vw); }
+    z-index: 1; }
     .shop .main-text h4 {
       font-family: 'Barlow Condensed';
       font-size: calc((30 / 1920) * 100vw);
@@ -8020,7 +8019,7 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: calc((45 / 1920) * 100vw); }
     .shop .main-text h3 {
       font-family: 'Rubik One';
-      font-size: 50px;
+      font-size: calc((50 / 1920) * 100vw);
       line-height: 0.8;
       color: #ffffff;
       margin-bottom: calc((15 / 1920) * 100vw); }
@@ -8052,7 +8051,10 @@ a.text-dark:hover, a.text-dark:focus {
       color: #ffffff; }
   .shop .bg-img {
     height: calc((700 / 1920) * 100vw);
-    margin-left: calc((-18 / 1920) * 100vw); }
+    margin-left: calc((-18 / 1920) * 100vw);
+    display: initial; }
+  .shop .bg-img-mobile {
+    display: none; }
   .shop .saiba-mais {
     width: calc((191 / 1920) * 100vw);
     height: calc((70 / 1920) * 100vw);
@@ -8071,6 +8073,40 @@ a.text-dark:hover, a.text-dark:focus {
       top: 50%;
       width: max-content;
       transform: translate(-50%, -50%); }
+  @media (max-width: 768px) {
+    .shop {
+      padding: calc((58 / 375) * 100vw) calc((0 / 375) * 100vw) calc((0 / 375) * 100vw) calc((0 / 375) * 100vw);
+      flex-direction: column; }
+      .shop .main-text {
+        padding-left: calc((31 / 375) * 100vw); }
+        .shop .main-text h4 {
+          font-size: calc((21 / 375) * 100vw);
+          margin-bottom: calc((45 / 375) * 100vw); }
+        .shop .main-text h3 {
+          font-size: calc((38 / 375) * 100vw);
+          margin-bottom: calc((15 / 375) * 100vw); }
+          .shop .main-text h3 .title-red-outline {
+            font-size: calc((78 / 375) * 100vw); }
+          .shop .main-text h3 .sinal-mais-title {
+            white-space: nowrap; }
+            .shop .main-text h3 .sinal-mais-title .sinal-mais {
+              font-size: calc((60.2 / 375) * 100vw); }
+            .shop .main-text h3 .sinal-mais-title .title-red {
+              font-size: calc((60 / 375) * 100vw); }
+        .shop .main-text p {
+          font-size: calc((21 / 375) * 100vw); }
+      .shop .bg-img {
+        display: none; }
+      .shop .bg-img-mobile {
+        width: 100%;
+        height: calc((309 / 375) * 100vw);
+        display: initial; }
+      .shop .saiba-mais {
+        width: calc((315 / 375) * 100vw);
+        height: calc((50 / 375) * 100vw);
+        margin-top: calc((36 / 375) * 100vw); }
+        .shop .saiba-mais span {
+          font-size: calc((20 / 375) * 100vw); } }
 
 /* Slider */
 .slick-slider {
@@ -8284,6 +8320,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
   font-style: normal; }
 
-
 .home-header {
   background: brown; }
+

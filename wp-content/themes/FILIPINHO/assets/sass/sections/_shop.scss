@@ -10,7 +10,6 @@
         display: flex;
         flex-direction: column;
         z-index: 1;
-        width: pxToVw(406.6, 1920);
 
         h4 {
             font-family: 'Barlow Condensed';
@@ -23,7 +22,7 @@
 
         h3 {
             font-family: 'Rubik One';
-            font-size: 50px;
+            font-size: pxToVw(50, 1920);
             line-height: 0.8;
             color: #ffffff;
             margin-bottom: pxToVw(15, 1920);
@@ -69,6 +68,11 @@
     .bg-img {
         height: pxToVw(700, 1920);
         margin-left: pxToVw(-18, 1920);
+        display: initial;
+    }
+
+    .bg-img-mobile {
+        display: none;
     }
 
     .saiba-mais {
@@ -94,6 +98,61 @@
     }
 
     @media(max-width: 768px) {
+        padding: pxToVw(58, 375) pxToVw(0, 375) pxToVw(0, 375) pxToVw(0, 375);
+        flex-direction: column;
 
+        .main-text {
+            padding-left: pxToVw(31, 375);
+
+            h4 {
+                font-size: pxToVw(21, 375);
+                margin-bottom: pxToVw(45, 375);
+            }
+    
+            h3 {
+                font-size: pxToVw(38, 375);
+                margin-bottom: pxToVw(15, 375);
+    
+                .title-red-outline {
+                    font-size: pxToVw(78, 375);
+                }
+    
+                .sinal-mais-title {
+                    white-space: nowrap;
+    
+                    .sinal-mais {
+                        font-size: pxToVw(60.2, 375);
+                    }
+    
+                    .title-red {
+                        font-size: pxToVw(60, 375);
+                    }
+                }
+            }
+    
+            p {
+                font-size: pxToVw(21, 375);
+            }
+        }
+    
+        .bg-img {
+            display: none;
+        }
+
+        .bg-img-mobile {
+            width: 100%;
+            height: pxToVw(309, 375);
+            display: initial;
+        }
+    
+        .saiba-mais {
+            width: pxToVw(315, 375);
+            height: pxToVw(50, 375);
+            margin-top: pxToVw(36, 375);
+    
+            span {
+                font-size: pxToVw(20, 375);
+            }
+        }
     }
 }

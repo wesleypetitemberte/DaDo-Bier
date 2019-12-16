@@ -19,4 +19,5 @@
     </div>
 
     <img class="bg-img" src="<?php echo get_template_directory_uri(); ?>/dist/img/bgshop.png" alt="Imagem de Fundo">
+    <img class="bg-img-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/friendsdrinking.png" alt="Imagem de Fundo Mobile">
 </section>
