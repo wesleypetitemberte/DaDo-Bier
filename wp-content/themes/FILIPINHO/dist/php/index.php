@@ -6,4 +6,5 @@
 <?php get_template_part("events");?>
 <?php get_template_part("shop");?>
 <?php get_template_part("connect-dado");?>
+<?php get_template_part("contact");?>
 <?php get_footer(); ?>
