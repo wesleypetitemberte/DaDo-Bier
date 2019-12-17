@@ -8134,24 +8134,40 @@ a.text-dark:hover, a.text-dark:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: calc((768 / 1920) * 100vw);
     text-align: center;
-    width: calc((768 / 1920) * 100vw); }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; }
     .connect-dado .main .bg-insta {
-      width: 100%; }
+      display: initial;
+      width: calc((768 / 1920) * 100vw); }
+    .connect-dado .main .bg-insta-mobile {
+      display: none; }
     .connect-dado .main .dado {
+      display: initial;
       position: absolute;
-      bottom: 0; }
+      width: calc((100 / 1920) * 100vw); }
+    .connect-dado .main .dado-mobile {
+      display: none; }
     .connect-dado .main .main-text {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
       .connect-dado .main .main-text .block-connect {
         display: flex;
         justify-content: space-between;
         align-items: center; }
         .connect-dado .main .main-text .block-connect .logo-instagram {
-          margin-right: calc((15 / 1920) * 100vw); }
+          margin-right: calc((15 / 1920) * 100vw);
+          width: calc((44 / 1920) * 100vw); }
+        .connect-dado .main .main-text .block-connect .logo-instagram-mobile {
+          display: none; }
         .connect-dado .main .main-text .block-connect h3 {
           font-family: 'Barlow Condensed';
           font-size: calc((30 / 1920) * 100vw);
@@ -8166,12 +8182,60 @@ a.text-dark:hover, a.text-dark:focus {
       .connect-dado .main .main-text .slash-yellow {
         width: calc((100 / 1920) * 100vw);
         height: 2px;
-        background-color: #ffb800; }
+        background-color: #ffb800;
+        margin: calc((30 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
   .connect-dado .bg-div {
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0; }
+  @media (max-width: 768px) {
+    .connect-dado {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .connect-dado ul li {
+        width: 50%;
+        height: calc((188 / 375) * 100vw); }
+      .connect-dado .main {
+        width: 100%; }
+        .connect-dado .main .bg-insta {
+          display: none; }
+        .connect-dado .main .bg-insta-mobile {
+          width: 100%;
+          display: initial; }
+        .connect-dado .main .dado {
+          display: none; }
+        .connect-dado .main .dado-mobile {
+          display: initial;
+          position: absolute;
+          width: calc((88 / 375) * 100vw); }
+        .connect-dado .main .main-text {
+          height: calc((110 / 375) * 100vw); }
+          .connect-dado .main .main-text .block-connect {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            .connect-dado .main .main-text .block-connect .logo-instagram {
+              display: none; }
+            .connect-dado .main .main-text .block-connect .logo-instagram-mobile {
+              margin-right: calc((15 / 375) * 100vw);
+              display: initial; }
+            .connect-dado .main .main-text .block-connect h3 {
+              font-size: calc((22.1 / 375) * 100vw);
+              white-space: nowrap; }
+          .connect-dado .main .main-text .block-dado h4 {
+            font-size: calc((22 / 375) * 100vw);
+            margin: 0; }
+          .connect-dado .main .main-text .slash-yellow {
+            width: calc((100 / 375) * 100vw);
+            margin: calc((15 / 375) * 100vw) calc((55 / 375) * 100vw); }
+      .connect-dado .bg-div {
+        height: calc((40 / 375) * 100vw);
+        bottom: calc((10 / 375) * 100vw); } }
 
 /* Slider */
 .slick-slider {

@@ -107,20 +107,20 @@ let sync = () => {
 	});
     gulp.watch(theme + 'assets/sass/**/*.scss', css);
     gulp.watch(theme + 'assets/js/**/*.js', js);
-    gulp.watch(theme + 'assets/img/*.{png,jpg,svg}', copyimages);
+    //gulp.watch(theme + 'assets/img/*.{png,jpg,svg}', copyimages);
     gulp.watch(theme + '*.php', php);
 };
 
-const build = gulp.series(clean, gulp.parallel(css, js, php, copyimages, copyfonts, sync));
+const build = gulp.series(clean, gulp.parallel(css, js, php, sync));
 
 //Export Tasks
 exports.css = css;
 exports.watch = watch
 exports.clean = clean;
 exports.js = js;
-exports.copyimages = copyimages;
-exports.minifyimages = minifyimages;
-exports.copyfonts = copyfonts;
+//exports.copyimages = copyimages;
+//exports.minifyimages = minifyimages;
+//exports.copyfonts = copyfonts;
 exports.build = build;
 exports.sync = sync;
 exports.php = php;

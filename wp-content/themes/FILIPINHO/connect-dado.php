@@ -33,11 +33,16 @@
     </ul>
 
     <div class="main">
+        <img class="bg-insta-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/BRUSH-MOBILE.png" alt="Background Insta Mobile">
         <img class="bg-insta" src="<?php echo get_template_directory_uri(); ?>/dist/img/brush.png" alt="Background Insta">
         <img class="dado" src="<?php echo get_template_directory_uri(); ?>/dist/img/logoDado.png" alt="Imagem do Dado">
+        <img class="dado-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/logoDado-mobile.png" alt="Imagem do Dado Mobile">
+
         <div class="main-text">
             <div class="block-connect">
                 <img class="logo-instagram" src="<?php echo get_template_directory_uri(); ?>/dist/img/Instagram.png" alt="Logo do Instagram">
+                <img class="logo-instagram-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/img/Instagram-mobile.png" alt="Logo do Instagram Mobile">
+
                 <h3>CONECTE-SE COM A DADO</h3>
             </div>
             
