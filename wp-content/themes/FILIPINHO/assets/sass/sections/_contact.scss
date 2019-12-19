@@ -1,62 +1,240 @@
 .contact {
+    padding: pxToVw(70, 1920) pxToVw(535, 1920) pxToVw(70, 1920) pxToVw(425, 1920);
+
     .header {
-        h3 {}
-        h4 {}
+        margin-bottom: pxToVw(50, 1920);
+        h3 {
+            font-family: 'Rubik One';
+            font-size: pxToVw(70, 1920);
+            line-height: 0.8;
+            color: #efb81f;
+        }
+
+        h4 {
+            font-family: 'Barlow Condensed';
+            font-size: pxToVw(30, 1920);
+            line-height: 1.1;
+            color: #333333;
+            margin: 0;
+        }
     }
 
     form {
         .block-name {
-            label {}
-            input {}
+            display: flex;
+            flex-direction: column;
+            label {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                font-weight: 500;
+                line-height: 1.65;
+                color: #323232;
+                margin-bottom: pxToVw(5, 1920);
+            }
+            input {
+                width: pxToVw(520, 1920);
+                height: pxToVw(53, 1920);
+                border: solid 1px #cacaca;
+                background-color: #ffffff;
+            }
         }
 
         .block-mail {
-            label {}
-            input {}
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                font-weight: 500;
+                line-height: 1.65;
+                color: #323232;
+                margin: pxToVw(15, 1920) pxToVw(0, 1920) pxToVw(5, 1920) pxToVw(0, 1920);
+            }
+            input {
+                width: pxToVw(245, 1920);
+                height: pxToVw(53, 1920);
+                border: solid 1px #cacaca;
+                background-color: #ffffff;
+            }
         }
 
         .block-phone {
-            label {}
-            input {}
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                font-weight: 500;
+                line-height: 1.65;
+                color: #323232;
+                margin: pxToVw(15, 1920) pxToVw(0, 1920) pxToVw(5, 1920) pxToVw(0, 1920);
+            }
+            input {
+                width: pxToVw(245, 1920);
+                height: pxToVw(53, 1920);
+                border: solid 1px #cacaca;
+                background-color: #ffffff;
+            }
         }
 
         .form-container {
-            label {}
-            select {}
-            img {}
-        }
+            label {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                font-weight: 500;
+                line-height: 1.65;
+                margin: pxToVw(15, 1920) pxToVw(0, 1920) pxToVw(5, 1920) pxToVw(0, 1920);
+            }
 
-        .block-name {
-            label {}
-            input {}
+            .subject {
+                width: pxToVw(520, 1920);
+                height: pxToVw(53, 1920);
+                background-color: #ffffff;
+                border: solid 1px #cacaca;
+                position: relative;
+
+                select {
+                    font-family: 'Barlow';
+                    padding-left: pxToVw(27, 1920);
+                    font-size: pxToVw(16, 1920);
+                    color: #323232;
+                    background-color: #ffffff;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+            }
+
+            img {
+                position: absolute;
+                right: pxToVw(14, 1920);
+                top: 50%;
+                width: pxToVw(30, 1920);
+                transform: translateY(-50%);
+            }
         }
 
         .block-msg {
-            label {}
-            textarea {}
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                font-weight: 500;
+                line-height: 1.65;
+                color: #323232;
+                margin: pxToVw(15, 1920) pxToVw(0, 1920) pxToVw(5, 1920) pxToVw(0, 1920);
+            }
+            textarea {
+                width: pxToVw(519, 1920);
+                height: pxToVw(146, 1920);
+                border: solid 1px #cacaca;
+                background-color: #ffffff;
+            }
         }
 
         .sent {
-            span {}
+            
+            width: pxToVw(191, 1920);
+            height: pxToVw(60, 1920);
+            border: solid 3px #ffb800;
+            position: relative;
+            margin-top: pxToVw(45, 1920);
+
+            span {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(20, 1920);
+                font-weight: 600;
+                letter-spacing: pxToVw(2, 1920);
+                color: #000000;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: max-content;
+                transform: translate(-50%, -50%);
+            }
         }
+
     }
 
     .main-text {
         .admin {
-            h4 {}
+            h4 {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(30, 1920);
+                font-weight: 600;
+                line-height: 1.1;
+                color: #333333;
+            }
         }
 
         .information {
-            .email {}
-            .email-dado {}
-            .telefone {}
-            .telefone-dado {}
-            .endereço {}
-            .endereço-dado {}
+            .email {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                line-height: 1.4;
+                font-weight: 600;
+                color: #323232;
+            }
+            .email-dado {
+                font-family: 'Barlow';
+                font-size: pxToVw(16, 1920);
+                line-height: 1.4;
+                font-weight: 600;
+                color: #323232;
+            }
+            .telefone {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                line-height: 1.4;
+                font-weight: 600;
+                color: #323232;
+            }
+            .telefone-dado {
+                font-family: 'Barlow';
+                font-size: pxToVw(16, 1920);
+                line-height: 1.4;
+                color: #323232;
+            }
+            .endereço {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(18, 1920);
+                line-height: 1.4;
+                font-weight: 600;
+                color: #323232;
+            }
+            .endereço-dado {
+                font-family: 'Barlow';
+                font-size: pxToVw(16, 1920);
+                line-height: 1.4;
+                color: #323232;
+            }
         }
 
         .google-maps-watch {
-            span {}
+            width: pxToVw(300, 1920);
+            height: pxToVw(60, 1920);
+            border: solid 3px #ffb800;
+            position: relative;
+            margin-top: pxToVw(45, 1920);
+
+            span {
+                font-family: 'Barlow Condensed';
+                font-size: pxToVw(20, 1920);
+                font-weight: 600;
+                letter-spacing: pxToVw(2, 1920);
+                color: #000000;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: max-content;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 }

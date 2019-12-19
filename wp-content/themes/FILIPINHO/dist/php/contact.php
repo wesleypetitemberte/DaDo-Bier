@@ -1,7 +1,7 @@
 <section class="contact">
     <div class="header">
         <h3>CONTATO</h3>
-        <h4>FALE COM A DADO BIER</h4>
+        <h4>FALE COM A <b>DADO BIER</b></h4>
     </div>
 
     <form action="">
@@ -24,14 +24,15 @@
         <div class="form-container">
 
             <label for="select">Assunto</label>
-            <select name="Select-subject">
-                    <option value="" selected>Selecione um Assunto</option>
-                    <option value="1">Reclamação</option>
-                    <option value="2">Sugestão</option>
-                    <option value="3">Outros</option>
-            </select>
-
-            <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/dist/img/chevron down.png" alt="Imagem da seta">
+            <div class="subject">
+                <select>
+                        <option value="" selected>Selecione um Assunto</option>
+                        <option value="1">Reclamação</option>
+                        <option value="2">Sugestão</option>
+                        <option value="3">Outros</option>
+                </select>
+                <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/dist/img/chevron down.png" alt="Imagem da seta">
+            </div>
         </div>
 
         <div class="block-msg">

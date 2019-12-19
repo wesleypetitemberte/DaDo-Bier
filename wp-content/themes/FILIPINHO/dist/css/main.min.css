@@ -7505,7 +7505,7 @@ a.text-dark:hover, a.text-dark:focus {
       .portfolio .block-search-beer .form-container select {
         padding-left: calc((30 / 1920) * 100vw);
         font-family: 'Barlow';
-        font-size: calc((20 / 1920) * 100vw);
+        font-size: calc((16 / 1920) * 100vw);
         font-weight: 600;
         color: #333333;
         width: 100%;
@@ -8237,6 +8237,185 @@ a.text-dark:hover, a.text-dark:focus {
         height: calc((40 / 375) * 100vw);
         bottom: calc((10 / 375) * 100vw); } }
 
+.contact {
+  padding: calc((70 / 1920) * 100vw) calc((535 / 1920) * 100vw) calc((70 / 1920) * 100vw) calc((425 / 1920) * 100vw); }
+  .contact .header {
+    margin-bottom: calc((50 / 1920) * 100vw); }
+    .contact .header h3 {
+      font-family: 'Rubik One';
+      font-size: calc((70 / 1920) * 100vw);
+      line-height: 0.8;
+      color: #efb81f; }
+    .contact .header h4 {
+      font-family: 'Barlow Condensed';
+      font-size: calc((30 / 1920) * 100vw);
+      line-height: 1.1;
+      color: #333333;
+      margin: 0; }
+  .contact form .block-name {
+    display: flex;
+    flex-direction: column; }
+    .contact form .block-name label {
+      font-family: 'Barlow Condensed';
+      font-size: calc((18 / 1920) * 100vw);
+      font-weight: 500;
+      line-height: 1.65;
+      color: #323232;
+      margin-bottom: calc((5 / 1920) * 100vw); }
+    .contact form .block-name input {
+      width: calc((520 / 1920) * 100vw);
+      height: calc((53 / 1920) * 100vw);
+      border: solid 1px #cacaca;
+      background-color: #ffffff; }
+  .contact form .block-mail {
+    display: flex;
+    flex-direction: column; }
+    .contact form .block-mail label {
+      font-family: 'Barlow Condensed';
+      font-size: calc((18 / 1920) * 100vw);
+      font-weight: 500;
+      line-height: 1.65;
+      color: #323232;
+      margin: calc((15 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((5 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
+    .contact form .block-mail input {
+      width: calc((245 / 1920) * 100vw);
+      height: calc((53 / 1920) * 100vw);
+      border: solid 1px #cacaca;
+      background-color: #ffffff; }
+  .contact form .block-phone {
+    display: flex;
+    flex-direction: column; }
+    .contact form .block-phone label {
+      font-family: 'Barlow Condensed';
+      font-size: calc((18 / 1920) * 100vw);
+      font-weight: 500;
+      line-height: 1.65;
+      color: #323232;
+      margin: calc((15 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((5 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
+    .contact form .block-phone input {
+      width: calc((245 / 1920) * 100vw);
+      height: calc((53 / 1920) * 100vw);
+      border: solid 1px #cacaca;
+      background-color: #ffffff; }
+  .contact form .form-container label {
+    font-family: 'Barlow Condensed';
+    font-size: calc((18 / 1920) * 100vw);
+    font-weight: 500;
+    line-height: 1.65;
+    margin: calc((15 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((5 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
+  .contact form .form-container .subject {
+    width: calc((520 / 1920) * 100vw);
+    height: calc((53 / 1920) * 100vw);
+    background-color: #ffffff;
+    border: solid 1px #cacaca;
+    position: relative; }
+    .contact form .form-container .subject select {
+      font-family: 'Barlow';
+      padding-left: calc((27 / 1920) * 100vw);
+      font-size: calc((16 / 1920) * 100vw);
+      color: #323232;
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+  .contact form .form-container img {
+    position: absolute;
+    right: calc((14 / 1920) * 100vw);
+    top: 50%;
+    width: calc((30 / 1920) * 100vw);
+    transform: translateY(-50%); }
+  .contact form .block-msg {
+    display: flex;
+    flex-direction: column; }
+    .contact form .block-msg label {
+      font-family: 'Barlow Condensed';
+      font-size: calc((18 / 1920) * 100vw);
+      font-weight: 500;
+      line-height: 1.65;
+      color: #323232;
+      margin: calc((15 / 1920) * 100vw) calc((0 / 1920) * 100vw) calc((5 / 1920) * 100vw) calc((0 / 1920) * 100vw); }
+    .contact form .block-msg textarea {
+      width: calc((519 / 1920) * 100vw);
+      height: calc((146 / 1920) * 100vw);
+      border: solid 1px #cacaca;
+      background-color: #ffffff; }
+  .contact form .sent {
+    width: calc((191 / 1920) * 100vw);
+    height: calc((60 / 1920) * 100vw);
+    border: solid 3px #ffb800;
+    position: relative;
+    margin-top: calc((45 / 1920) * 100vw); }
+    .contact form .sent span {
+      font-family: 'Barlow Condensed';
+      font-size: calc((20 / 1920) * 100vw);
+      font-weight: 600;
+      letter-spacing: calc((2 / 1920) * 100vw);
+      color: #000000;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: max-content;
+      transform: translate(-50%, -50%); }
+  .contact .main-text .admin h4 {
+    font-family: 'Barlow Condensed';
+    font-size: calc((30 / 1920) * 100vw);
+    font-weight: 600;
+    line-height: 1.1;
+    color: #333333; }
+  .contact .main-text .information .email {
+    font-family: 'Barlow Condensed';
+    font-size: calc((18 / 1920) * 100vw);
+    line-height: 1.4;
+    font-weight: 600;
+    color: #323232; }
+  .contact .main-text .information .email-dado {
+    font-family: 'Barlow';
+    font-size: calc((16 / 1920) * 100vw);
+    line-height: 1.4;
+    font-weight: 600;
+    color: #323232; }
+  .contact .main-text .information .telefone {
+    font-family: 'Barlow Condensed';
+    font-size: calc((18 / 1920) * 100vw);
+    line-height: 1.4;
+    font-weight: 600;
+    color: #323232; }
+  .contact .main-text .information .telefone-dado {
+    font-family: 'Barlow';
+    font-size: calc((16 / 1920) * 100vw);
+    line-height: 1.4;
+    color: #323232; }
+  .contact .main-text .information .endereço {
+    font-family: 'Barlow Condensed';
+    font-size: calc((18 / 1920) * 100vw);
+    line-height: 1.4;
+    font-weight: 600;
+    color: #323232; }
+  .contact .main-text .information .endereço-dado {
+    font-family: 'Barlow';
+    font-size: calc((16 / 1920) * 100vw);
+    line-height: 1.4;
+    color: #323232; }
+  .contact .main-text .google-maps-watch {
+    width: calc((300 / 1920) * 100vw);
+    height: calc((60 / 1920) * 100vw);
+    border: solid 3px #ffb800;
+    position: relative;
+    margin-top: calc((45 / 1920) * 100vw); }
+    .contact .main-text .google-maps-watch span {
+      font-family: 'Barlow Condensed';
+      font-size: calc((20 / 1920) * 100vw);
+      font-weight: 600;
+      letter-spacing: calc((2 / 1920) * 100vw);
+      color: #000000;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: max-content;
+      transform: translate(-50%, -50%); }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -8449,6 +8628,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
   font-style: normal; }
 
-
 .home-header {
   background: brown; }
+
