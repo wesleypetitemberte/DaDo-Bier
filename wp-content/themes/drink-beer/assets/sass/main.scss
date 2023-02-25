@@ -1,0 +1,46 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Bootstrap
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";
+
+// Variáveis
+@import "_normal-theme";
+
+// MixinsÇ
+@import "_mixins";
+
+// Global
+@import "_global";
+
+// Bootstrap Overrides
+@import "_custom";
+
+// Includes
+
+// Pages
+@import "pages/home";
+
+//Sections
+@import "sections/home-header";
+@import "sections/portfolio";
+@import "sections/bier-experience";
+@import "sections/restaurants";
+@import "sections/events";
+@import "sections/shop";
+@import "sections/connect-Drink";
+@import "sections/contact";
+
+// Plugins
+@import "../../../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+@font-face {
+    font-family: "slick";
+    src: url("../fonts/slick.ttf");
+    src: url("../fonts/slick.woff") format("woff") url("../fonts/slick.eot")
+            format("eot"),
+        url("../fonts/slick.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
